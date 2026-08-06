@@ -31,8 +31,8 @@
                 "text": "Molntjänst"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -129,12 +129,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "9a84bed1-066d-4df5-a137-42ea407c0d9b",
+                  "title": "DDoS-attack",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Availability",
+                  "description": "Angripare överbelastar molntjänsten",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "CIA",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "confidentiality": 0,
+                "integrity": 0,
+                "availability": 1
+              }
             }
           },
           {
@@ -509,8 +528,8 @@
                 "text": "Kundhantering"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -607,12 +626,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "365e6c35-6eef-44dc-b687-57859e36c77e",
+                  "title": "DDoS-attack",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Availability",
+                  "description": "Angripare överbelastar kundhantering",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "CIA",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "confidentiality": 0,
+                "integrity": 0,
+                "availability": 1
+              }
             }
           },
           {
@@ -1271,7 +1309,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1292,13 +1331,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "c177d891-4d46-4cc2-9ec5-d8acd56c0e78",
+                  "title": "Repuditation",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Integrity",
+                  "description": "Administratören kan manipulera kunddata utan att det spåras",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "CIA",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "confidentiality": 0,
+                "integrity": 1,
+                "availability": 0
+              }
             },
             "labels": [
               "Hanterar"
@@ -1311,7 +1369,13 @@
             "target": {
               "cell": "53c058b1-1646-45db-9da2-dc92d0eac93c",
               "port": "2f38fc7e-182d-4622-ab93-53df3a0c3eec"
-            }
+            },
+            "vertices": [
+              {
+                "x": 830,
+                "y": -92
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1510,6 +1574,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 6
+    "threatTop": 9
   }
 }
