@@ -1218,21 +1218,22 @@
             "labels": [
               "Hanterar"
             ],
-            "id": "7fe9a046-1c70-4a3f-b030-076cf04515fe",
+            "id": "8b42a702-e4af-430c-a9fd-ffff3612d932",
             "source": {
-              "x": 1017,
-              "y": -50
+              "x": 705,
+              "y": -92
             },
             "target": {
-              "cell": "0dbd1156-c4ed-4862-8faf-19626760c6d8",
-              "port": "1d45d580-d451-4976-b93e-56bfc5dcbe66"
+              "cell": "53c058b1-1646-45db-9da2-dc92d0eac93c",
+              "port": "2f38fc7e-182d-4622-ab93-53df3a0c3eec"
             }
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1253,26 +1254,51 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "d078b60c-1f88-48eb-8400-5f7df70d8d4c",
+                  "title": "Förfalskad identitet",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Confidentiality",
+                  "description": "Angripare använder administratörs inloggningsuppgifter för att få åtkomst till systemet och tillgång till information",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "CIA",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "confidentiality": 1,
+                "integrity": 0,
+                "availability": 0
+              }
             },
             "labels": [
               "Hanterar"
             ],
-            "id": "8b42a702-e4af-430c-a9fd-ffff3612d932",
+            "id": "7fe9a046-1c70-4a3f-b030-076cf04515fe",
             "source": {
-              "x": 705,
-              "y": -92
+              "x": 1017,
+              "y": -50
             },
             "target": {
-              "cell": "53c058b1-1646-45db-9da2-dc92d0eac93c",
-              "port": "2f38fc7e-182d-4622-ab93-53df3a0c3eec"
-            }
+              "cell": "0dbd1156-c4ed-4862-8faf-19626760c6d8",
+              "port": "1d45d580-d451-4976-b93e-56bfc5dcbe66"
+            },
+            "vertices": [
+              {
+                "x": 1017,
+                "y": 110
+              }
+            ]
           },
           {
             "position": {
@@ -1399,6 +1425,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
