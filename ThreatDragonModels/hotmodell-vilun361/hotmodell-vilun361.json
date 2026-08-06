@@ -15,7 +15,7 @@
         "diagramType": "CIA",
         "placeholder": "New CIA diagram description",
         "thumbnail": "./public/content/images/thumbnail.cia.jpg",
-        "version": "2.6.1",
+        "version": "2.6.2",
         "cells": [
           {
             "position": {
