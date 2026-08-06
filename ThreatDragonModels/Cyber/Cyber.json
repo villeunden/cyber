@@ -20,9 +20,19 @@
         "version": "2.6.2",
         "cells": [],
         "description": "testar"
+      },
+      {
+        "id": 1,
+        "title": "test2",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "testar igen"
       }
     ],
-    "diagramTop": 1,
+    "diagramTop": 2,
     "reviewer": "me",
     "threatTop": 0
   }
