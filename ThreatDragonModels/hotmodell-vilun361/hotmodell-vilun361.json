@@ -955,78 +955,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Lagrar/Hämtar data",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "4e92a094-9ae1-4f25-9e4e-54040b6e0915",
-                  "title": "SQL injektion",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Confidentiality",
-                  "description": "Angripare manipulerar kunddata som kommer in till databasen",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "CIA",
-                  "new": false,
-                  "number": 4,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [],
-              "threatFrequency": {
-                "confidentiality": 1,
-                "integrity": 0,
-                "availability": 0
-              }
-            },
-            "labels": [
-              "Lagrar/Hämtar data"
-            ],
-            "id": "9931a563-9ffc-4f88-8d34-0da27b47b0a1",
-            "source": {
-              "cell": "cc735dbe-95d8-474d-9a6f-c69004310b6e",
-              "port": "32b10ff6-e79d-45af-a1ad-e0ff602e8af9"
-            },
-            "target": {
-              "cell": "46f9f4ab-65ab-4d9f-873f-08bb5c09420f",
-              "port": "55772b9f-39c7-4555-8c69-c663ede05e25"
-            },
-            "vertices": [
-              {
-                "x": 615,
-                "y": 0
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Autentiserar",
               "description": "",
               "outOfScope": false,
@@ -1157,7 +1085,7 @@
                   "title": "Tampering via virus",
                   "status": "Open",
                   "severity": "TBD",
-                  "type": "Confidentiality",
+                  "type": "Integrity",
                   "description": "Angripare skickar in skadlig kod genom kontorsenheten",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "CIA",
@@ -1169,7 +1097,7 @@
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "confidentiality": 1,
-                "integrity": 0,
+                "integrity": 1,
                 "availability": 0
               }
             },
@@ -1189,74 +1117,12 @@
               {
                 "x": 440,
                 "y": 300
+              },
+              {
+                "x": 470,
+                "y": 300
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Kunduppgifter",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "58d9f367-8ad8-4686-aa15-59ecb4a7c734",
-                  "title": "Icke-spårbar kommunikation",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Integrity",
-                  "description": "Kommunikation utanför organisation kräver kryptografisk signatur för att vara säkra",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "CIA",
-                  "new": false,
-                  "number": 6,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [],
-              "threatFrequency": {
-                "confidentiality": 0,
-                "integrity": 1,
-                "availability": 0
-              }
-            },
-            "labels": [
-              "Kunduppgifter"
-            ],
-            "id": "5d602409-2b80-4657-bb3a-7527a099a415",
-            "source": {
-              "x": 614,
-              "y": 300
-            },
-            "target": {
-              "cell": "9cfd8ade-cb71-4e41-8412-9f971b7c4ad1",
-              "port": "3888bdb2-6102-4370-99f1-675838dcc3a4"
-            }
           },
           {
             "shape": "flow",
@@ -1446,6 +1312,144 @@
               {
                 "x": 1017,
                 "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Kunduppgifter",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "58d9f367-8ad8-4686-aa15-59ecb4a7c734",
+                  "title": "Icke-spårbar kommunikation",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Integrity",
+                  "description": "Kommunikation utanför organisation kräver kryptografisk signatur för att vara säkra",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "CIA",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "confidentiality": 0,
+                "integrity": 1,
+                "availability": 0
+              }
+            },
+            "labels": [
+              "Kunduppgifter"
+            ],
+            "id": "5d602409-2b80-4657-bb3a-7527a099a415",
+            "source": {
+              "x": 614,
+              "y": 300
+            },
+            "target": {
+              "cell": "9cfd8ade-cb71-4e41-8412-9f971b7c4ad1",
+              "port": "3888bdb2-6102-4370-99f1-675838dcc3a4"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Lagrar/Hämtar data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "4e92a094-9ae1-4f25-9e4e-54040b6e0915",
+                  "title": "SQL injektion",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Confidentiality",
+                  "description": "Angripare manipulerar kunddata som kommer in till databasen",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "CIA",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "confidentiality": 1,
+                "integrity": 0,
+                "availability": 0
+              }
+            },
+            "labels": [
+              "Lagrar/Hämtar data"
+            ],
+            "id": "9931a563-9ffc-4f88-8d34-0da27b47b0a1",
+            "source": {
+              "cell": "cc735dbe-95d8-474d-9a6f-c69004310b6e",
+              "port": "32b10ff6-e79d-45af-a1ad-e0ff602e8af9"
+            },
+            "target": {
+              "cell": "46f9f4ab-65ab-4d9f-873f-08bb5c09420f",
+              "port": "55772b9f-39c7-4555-8c69-c663ede05e25"
+            },
+            "vertices": [
+              {
+                "x": 615,
+                "y": 0
               }
             ]
           },
